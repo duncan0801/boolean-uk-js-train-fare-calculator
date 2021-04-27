@@ -72,8 +72,8 @@ else if (yourAge > seniorPassengerAge) {
     alert(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
 }
 else
-    console.log(`Your Ticket Price: £${ticketPrice}`)
-    alert(`Your Ticket Price: £${ticketPrice}`)
+    console.log(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
+    alert(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
 
 
 
