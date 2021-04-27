@@ -18,13 +18,21 @@ let yourAge = Number(prompt(`What is your age?`))
 let yourDistance = Number(prompt(`How far are you travelling?`))
 
 
-let ticketPrice = pricePerKM * yourDistance
+let ticketPrice = (pricePerKM * yourDistance).toFixed(2)
 
 console.log(`Normal Ticket Price: £${ticketPrice}`)
+alert(`Normal Ticket Price: £${ticketPrice}`)
 
-if (yourAge < juniorPassengerAge) 
+if (yourAge < juniorPassengerAge) {
     ticketPrice *= 0.8
-else if (yourAge > seniorPassengerAge)
-    ticketPrice *= 0.6
+    console.log(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
 
-console.log(`Your Ticket Price: £${ticketPrice}`)
+}
+else if (yourAge > seniorPassengerAge) {
+    ticketPrice *= 0.6.toFixed(2)
+    console.log(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
+    alert(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
+}
+    else
+    console.log(`Your Ticket Price: £${ticketPrice}`)
+    alert(`Your Ticket Price: £${ticketPrice.toFixed(2)}`)
